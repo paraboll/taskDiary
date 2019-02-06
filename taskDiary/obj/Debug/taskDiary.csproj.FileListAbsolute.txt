@@ -5,3 +5,10 @@ C:\Users\колян\source\repos\taskDiary\taskDiary\bin\Debug\taskDiary.exe
 C:\Users\колян\source\repos\taskDiary\taskDiary\bin\Debug\taskDiary.pdb
 C:\Users\колян\source\repos\taskDiary\taskDiary\obj\Debug\taskDiary.exe
 C:\Users\колян\source\repos\taskDiary\taskDiary\obj\Debug\taskDiary.pdb
+C:\Users\колян\gitHub\taskDiary\taskDiary\bin\Debug\taskDiary.exe.config
+C:\Users\колян\gitHub\taskDiary\taskDiary\bin\Debug\taskDiary.exe
+C:\Users\колян\gitHub\taskDiary\taskDiary\bin\Debug\taskDiary.pdb
+C:\Users\колян\gitHub\taskDiary\taskDiary\obj\Debug\taskDiary.csprojAssemblyReference.cache
+C:\Users\колян\gitHub\taskDiary\taskDiary\obj\Debug\taskDiary.csproj.CoreCompileInputs.cache
+C:\Users\колян\gitHub\taskDiary\taskDiary\obj\Debug\taskDiary.exe
+C:\Users\колян\gitHub\taskDiary\taskDiary\obj\Debug\taskDiary.pdb

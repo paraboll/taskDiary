@@ -38,7 +38,7 @@ namespace taskDiary
                     {
                         case 1: showMyBusiness(); break; //задача ---> отображение списка дел
                         case 2: addNewBusiness(); break; //задача ---> Добавление в список дел
-                        case 3: deliteBusiness(); break; //задача ---> Удаление Заметки
+                        case 3: businesses = deliteBusiness(); break; //задача ---> Удаление Заметки
                         case 4: editBusiness(); break;   //задача ---> редактирование Заметки
                         case 5: BubbleSort(); break;     //задача ---> сортировка
                         case 6: WriteInFile(); break;     //задача ---> запись в фаил
@@ -130,20 +130,39 @@ namespace taskDiary
         }
 
         //удаляем заметку
-        void deliteBusiness()
+        Business[] deliteBusiness()
         {
+            Business[] businessTemp = new Business[(businesses.Length) - 1]; //масив в который перепишем business
+            for (int i = 0; i < businessTemp.Length; i++) businessTemp[i] = new Business();
+            bool isTrue = false; //есть ли такая заметка?
+
             Console.WriteLine("введите № заметки которую хотите удалить");
             int deliteItem = int.Parse(Console.ReadLine());
 
             for(int i =0; i< businesses.Length; i++)
             {
-                if (deliteItem == businesses[i].numberBusiness)
-                {
-                    businesses[i] = null;
-                    Console.WriteLine("Заметка удалена");
-                }
+                if (deliteItem == businesses[i].numberBusiness) isTrue = true;
             }
-            Console.WriteLine();
+
+            if (isTrue)
+            {
+                for (int i = 0, j = 0; i < businessTemp.Length; i++)
+                {
+                    if (deliteItem == businesses[j].numberBusiness) j++;
+
+                    businessTemp[i].numberBusiness = businesses[j].numberBusiness;
+                    businessTemp[i].textBusiness = businesses[j].textBusiness;
+
+                    j++;
+
+                }
+                Console.WriteLine();
+                return businessTemp;
+            }
+            else
+            {
+                return businesses;
+            }
         }
 
         //редактируем заметку
